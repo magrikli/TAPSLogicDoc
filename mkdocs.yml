@@ -1,0 +1,33 @@
+site_name: TAPSLogic Documentation
+nav:
+  - TapsLogic:
+    - Overview: Overview.md
+    - Modules: 
+      - Web Socket: CPanelwss.md
+      - Logging: CPanelwss.md
+      - Types: CPanelwss.md
+      - Convert DB: CPanelwss.md
+      - UDP Servers: CPanelwss.md
+      - Objects:
+        - Facility: Facility.md
+        - Sistem: Sistem.md
+        - Room: Room.md
+        - Conveyor: Conveyor.md
+        - Carrier: Carrier.md
+        - Shelf: Shelf.md
+        - Pallet: Pallet.md
+  - WS Clients: 
+    - Control Panel: WS/CPanel.md
+    - Room Display: WS/Room.md
+    - Lobby Display: WS/Lobby.md
+    - Terminal Display: WS/Terminal.md
+  - PLC: 
+      - Room: PLC/Room.md
+      - Conveyor: PLC/Conveyor.md
+      - Lift: PLC/Lift.md
+      - Shuttle: PLC/Shuttle.md
+      - TurnTable: PLC/Turntable.md
+      - Shelf: PLC/Shelf.md
+      - Safety: PLC/Safety.md
+theme:
+  name: material

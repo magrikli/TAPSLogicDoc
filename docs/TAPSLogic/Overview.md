@@ -30,6 +30,4 @@ Ana program dosyasıdır. Bu dosya çalıştığında argümanlardan aldığı k
 * **`RestorePath`**: `Restore` komutu kullanıldığında verilerin okunacağı `Sqlite3` dosyalarının bulunduğu yol.
 * **`BackupPath`**: `Backup` komutu kullanıldığında verilerin yedekleneceği `Sqlite3` dosyalarının bulunduğu yol.
 
-## Diğer Bileşenler
-
 TAPSMain, Sistemin Control Panel ve diğer ekranlarla WebSocket haberleşmesini sağlayan `CPanelWSS` modülünü de çalıştırır.

@@ -1,33 +1,56 @@
 site_name: TAPSLogic Documentation
 nav:
+  - Docker: Docker.md
   - TapsLogic:
-    - Overview: Overview.md
+    - Overview: TAPSLogic/Overview.md
     - Modules: 
-      - Web Socket: CPanelwss.md
-      - Logging: CPanelwss.md
-      - Types: CPanelwss.md
-      - Convert DB: CPanelwss.md
-      - UDP Servers: CPanelwss.md
+      - Web Socket: TAPSLogic/Modules/WebSocket.md
+      - Logging: TAPSLogic/Modules/Logging.md
+      - Types: TAPSLogic/Modules/Types.md
+      - Convert DB: TAPSLogic/Modules/ConvertDB.md
+      - UDP Servers: TAPSLogic/Modules/UDPServers.md
       - Objects:
-        - Facility: Facility.md
-        - Sistem: Sistem.md
-        - Room: Room.md
-        - Conveyor: Conveyor.md
-        - Carrier: Carrier.md
-        - Shelf: Shelf.md
-        - Pallet: Pallet.md
+        - Facility: TAPSLogic/Objects/Facility.md
+        - Sistem: TAPSLogic/Objects/Sistem.md
+        - Room: TAPSLogic/Objects/Room.md
+        - Conveyor: TAPSLogic/Objects/Conveyor.md
+        - Carrier: TAPSLogic/Objects/Carrier.md
+        - Shelf: TAPSLogic/Objects/Shelf.md
+        - Pallet: TAPSLogic/Objects/Pallet.md
   - WS Clients: 
     - Control Panel: WS/CPanel.md
     - Room Display: WS/Room.md
     - Lobby Display: WS/Lobby.md
     - Terminal Display: WS/Terminal.md
   - PLC: 
-      - Room: PLC/Room.md
-      - Conveyor: PLC/Conveyor.md
-      - Lift: PLC/Lift.md
-      - Shuttle: PLC/Shuttle.md
-      - TurnTable: PLC/Turntable.md
-      - Shelf: PLC/Shelf.md
-      - Safety: PLC/Safety.md
+      - Overview: PLC/Room.md
+      - Main Blocks:
+        - Room: PLC/Room.md
+        - Conveyor: PLC/Conveyor.md
+        - Lift: PLC/Lift.md
+        - Shuttle: PLC/Shuttle.md
+        - TurnTable: PLC/Turntable.md
+        - Shelf: PLC/Shelf.md
+        - Safety: PLC/Safety.md
+      - Other Blocks: PLC/Room.md
 theme:
   name: material
+  features:
+    - content.code.copy    
+    - content.code.select      
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
